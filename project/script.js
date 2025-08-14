@@ -55,30 +55,60 @@ function generateCourseCards() {
     courses.forEach(course => {
         const courseCard = document.createElement('div');
         courseCard.className = 'course-card';
-        courseCard.style.setProperty('--course-gradient', course.gradient);
+        courseCard.setAttribute('data-course', course.id);
         courseCard.onclick = () => selectCourse(course);
         
         courseCard.innerHTML = `
-            <div class="course-card-header">
+            <div class="course-image-container">
+                <img src="${getCourseImage(course.id)}" alt="${course.name}" class="course-background-image" onerror="this.style.display='none'">
                 <div class="course-icon">
                     ${getIconSVG(course.icon)}
                 </div>
-                <div class="course-status"></div>
             </div>
-            <h3>${course.name}</h3>
-            <p>Test your knowledge with interactive quizzes</p>
-            <div class="course-card-footer">
-                <span class="course-levels">3 Levels Available</span>
-                <div class="course-arrow">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
+            <div class="course-content">
+                <div class="course-info">
+                    <h3>${course.name}</h3>
+                    <p>${getCourseDescription(course.id)}</p>
                 </div>
+                <button class="answer-quiz-btn">Answer Quiz</button>
             </div>
         `;
         
         coursesGrid.appendChild(courseCard);
     });
+}
+
+// Get course images
+function getCourseImage(courseId) {
+    const images = {
+        'web-development': 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'digital-marketing': 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'blockchain': 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'cybersecurity': 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'ai': 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'iot': 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'cloud-computing': 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'machine-learning': 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'data-science': 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'big-data': 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800'
+    };
+    return images[courseId] || '';
+}
+// Get course descriptions
+function getCourseDescription(courseId) {
+    const descriptions = {
+        'web-development': 'Learn HTML, CSS, JavaScript, and modern frameworks',
+        'digital-marketing': 'Master online marketing strategies and tools',
+        'blockchain': 'Understand distributed ledger technology and cryptocurrencies',
+        'cybersecurity': 'Protect systems and networks from digital attacks',
+        'ai': 'Explore artificial intelligence and machine learning concepts',
+        'iot': 'Connect devices and build smart systems',
+        'cloud-computing': 'Deploy and manage applications in the cloud',
+        'machine-learning': 'Build predictive models and intelligent systems',
+        'data-science': 'Analyze data and extract meaningful insights',
+        'big-data': 'Process and analyze large-scale datasets'
+    };
+    return descriptions[courseId] || 'Test your knowledge with interactive quizzes';
 }
 
 // Get icon SVG
