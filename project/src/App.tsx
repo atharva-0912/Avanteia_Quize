@@ -122,7 +122,7 @@ function App() {
               <GraduationCap size={40} className="text-white" />
             </div>
             <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              TechQuiz Pro
+              Avantiea Pro
             </h1>
           </div>
           

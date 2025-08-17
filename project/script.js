@@ -70,7 +70,7 @@ function generateCourseCards() {
                     <h3>${course.name}</h3>
                     <p>${getCourseDescription(course.id)}</p>
                 </div>
-                <button class="answer-quiz-btn">Answer Quiz</button>
+                <button class="answer-quiz-btn">Answer Now</button>
             </div>
         `;
         
@@ -160,7 +160,7 @@ function showSetupPage() {
     
     // Update course header
     const courseHeader = document.getElementById('course-header');
-    courseHeader.style.setProperty('--course-gradient', currentCourse.gradient);
+    courseHeader.style.background = `linear-gradient(135deg, ${currentCourse.gradient})`;
     courseHeader.innerHTML = `
         <h1>${currentCourse.name} Quiz</h1>
         <p>Get ready to test your knowledge with 10 challenging questions!</p>

@@ -25,6 +25,33 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+  .swiper-slide {
+    display: flex;
+  }
+
+  .service-card {
+    min-height: 420px; /* uniform card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .service-card .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>
+
+<!-- Your swiper slides remain the same -->
+
 </head>
 
 <body class="index-page">
@@ -59,7 +86,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#quize">Quize</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
 
           </ul>
@@ -83,63 +109,60 @@
       </div>
 
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <span class="hero-badge">Innovative Solutions</span>
-              <h1>Transform Your Business with Modern Technology</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
-              <div class="hero-actions">
-                <a href="#services" class="btn-primary">Explore Services</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
-                  <i class="bi bi-play-circle"></i>
-                  <span>Watch Demo</span>
-                </a>
-              </div>
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number">500+</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">98%</span>
-                  <span class="stat-label">Client Satisfaction</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">24/7</span>
-                  <span class="stat-label">Support Available</span>
-                </div>
-              </div>
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <div class="hero-content">
+        <h1>Empowering Learners with Future-Ready Skills</h1>
+        <p>Welcome to Avanteia Academy, where education meets innovation. We provide hands-on training in cutting-edge domains such as Cybersecurity, Web Development, Internet of Things (IoT), Artificial Intelligence, and many more. Our goal is to prepare students and professionals with industry-relevant skills to thrive in the digital era.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/919307402403?text=Hello%20Avanteia%20Team,%20I%20want%20to%20know%20more%20about%20your%20academy%20and%20need%20more%20details" class="btn-primary">WhatsApp</a>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">2000+</span>
+            <span class="stat-label">Students Trained</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Placement Success</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Industry Partnerships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="hero-visual">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="feature-card">
+              <i class="bi bi-shield-lock"></i>
+              <span>Cybersecurity</span>
+            </div>
+            <div class="feature-card">
+              <i class="bi bi-code-slash"></i>
+              <span>Web Development</span>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="hero-visual">
-              <div class="row g-3">
-                <div class="col-6">
-                  <div class="feature-card">
-                    <i class="bi bi-shield-check"></i>
-                    <span>Secure &amp; Reliable</span>
-                  </div>
-                  <div class="feature-card">
-                    <i class="bi bi-people"></i>
-                    <span>Expert Team</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="feature-card">
-                    <i class="bi bi-speedometer2"></i>
-                    <span>High Performance</span>
-                  </div>
-                  <div class="feature-card">
-                    <i class="bi bi-award"></i>
-                    <span>Award Winning</span>
-                  </div>
-                </div>
-              </div>
+          <div class="col-6">
+            <div class="feature-card">
+              <i class="bi bi-wifi"></i>
+              <span>IoT Solutions</span>
+            </div>
+            <div class="feature-card">
+              <i class="bi bi-cpu"></i>
+              <span>AI & ML</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
 
     </section><!-- /Hero Section -->
 
@@ -180,8 +203,7 @@
           </div>
 
           <div class="cta-wrapper">
-            <a href="#courses" class="btn btn-primary">Explore Courses</a>
-            <a href="#team" class="btn btn-outline">Meet Our Mentors</a>
+            <a href="#services" class="btn btn-primary">Explore Courses</a>
           </div>
         </div>
       </div>
@@ -209,24 +231,28 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6">
-            <div class="services-content" data-aos-duration="900">
-              <span class="subtitle">Professional Services</span>
-              <h2>Elevating Business Performance Through Strategic Solutions</h2>
-              <p data-aos-duration="800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius risus sed pellentesque auctor. Phasellus gravida magna at tortor cursus, sit amet suscipit tortor malesuada.</p>
-              <div class="mt-4" data-aos-duration="1100">
-                <a href="#" class="btn-consultation"><span>Request a Consultation</span><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="services-image">
-              <img src="assets/img/services/services-9.webp" alt="Business Services" class="img-fluid">
-              <div class="shape-circle"></div>
-              <div class="shape-accent"></div>
-            </div>
-          </div>
-        </div>
+  <div class="col-lg-6">
+    <div class="services-content" data-aos-duration="900">
+      <span class="subtitle">Avanteia Academy</span>
+      <h2>Empowering Careers with Future-Ready Skills</h2>
+      <p data-aos-duration="800">
+        At Avanteia Academy, we provide industry-focused training in cutting-edge domains like Web Development, Cybersecurity, Artificial Intelligence, Blockchain, Data Science, Cloud Computing, and more.  
+        Our mission is to equip learners with practical knowledge, hands-on projects, and expert mentorship to help them excel in their careers and become leaders in technology.
+      </p>
+      <div class="mt-4" data-aos-duration="1100">
+        <a href="#services" class="btn-consultation"><span>Explore Courses</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="services-image">
+      <img src="assets/img/services/academy.webp" alt="Avanteia Academy Courses" class="img-fluid">
+      <div class="shape-circle"></div>
+      <div class="shape-accent"></div>
+    </div>
+  </div>
+</div>
+
 
         <div class="row mt-5" data-aos-duration="1000">
           <div class="col-12">
@@ -259,77 +285,148 @@
               </script>
               <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <div class="icon-box">
-                      <i class="bi bi-bar-chart-fill"></i>
-                    </div>
-                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                    <div class="content">
-                      <h4><a href="#">Financial Strategy Development</a></h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.</p>
-                      <div class="service-number">01</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-code-slash"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Web Development</a></h4>
+        <p>Learn to design, develop, and deploy modern, responsive, and scalable websites and web applications. This course covers HTML, CSS, JavaScript, frameworks like React, and backend integration for real-world projects.</p>
+        <div class="service-number">01</div>
+      </div>
+    </div>
+  </div>
 
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <div class="icon-box">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                    <div class="content">
-                      <h4><a href="#">Market Expansion Advisory</a></h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.</p>
-                      <div class="service-number">02</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-shield-lock"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Cybersecurity</a></h4>
+        <p>Master practical skills to secure systems, networks, and data from cyber threats. Learn ethical hacking, penetration testing, and advanced security practices used by industry professionals.</p>
+        <div class="service-number">02</div>
+      </div>
+    </div>
+  </div>
 
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <div class="icon-box">
-                      <i class="bi bi-shield-check"></i>
-                    </div>
-                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                    <div class="content">
-                      <h4><a href="#">Risk Management Solutions</a></h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.</p>
-                      <div class="service-number">03</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-graph-up-arrow"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Digital Marketing</a></h4>
+        <p>Boost online presence with in-depth knowledge of SEO, social media marketing, content creation, PPC advertising, and data-driven marketing strategies to drive measurable growth.</p>
+        <div class="service-number">03</div>
+      </div>
+    </div>
+  </div>
 
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <div class="icon-box">
-                      <i class="bi bi-lightbulb-fill"></i>
-                    </div>
-                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                    <div class="content">
-                      <h4><a href="#">Innovation &amp; Digital Transformation</a></h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.</p>
-                      <div class="service-number">04</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-link"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Blockchain</a></h4>
+        <p>Explore blockchain fundamentals, cryptocurrencies, and smart contracts. Learn how decentralized solutions are transforming industries such as finance, healthcare, and logistics.</p>
+        <div class="service-number">04</div>
+      </div>
+    </div>
+  </div>
 
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <div class="icon-box">
-                      <i class="bi bi-people-fill"></i>
-                    </div>
-                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
-                    <div class="content">
-                      <h4><a href="#">Talent Management Strategy</a></h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.</p>
-                      <div class="service-number">05</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-wifi"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Internet of Things (IoT)</a></h4>
+        <p>Learn how to connect devices, sensors, and systems for real-time monitoring and automation. Gain hands-on experience in building smart solutions for homes, industries, and cities.</p>
+        <div class="service-number">05</div>
+      </div>
+    </div>
+  </div>
 
-              </div>
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-cpu"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Artificial Intelligence</a></h4>
+        <p>Understand AI concepts, natural language processing, and computer vision. Build innovative AI-powered applications that automate tasks and enhance user experiences.</p>
+        <div class="service-number">06</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-robot"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Machine Learning</a></h4>
+        <p>Develop predictive models and algorithms that learn from data. Work on real-world projects like recommendation systems, fraud detection, and sentiment analysis.</p>
+        <div class="service-number">07</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-bar-chart"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Data Science</a></h4>
+        <p>Analyze, visualize, and interpret complex datasets using Python, R, and data visualization tools. Learn how to uncover actionable insights and support business decisions.</p>
+        <div class="service-number">08</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-cloud-upload"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Cloud Computing</a></h4>
+        <p>Gain expertise in cloud platforms like AWS, Azure, and Google Cloud. Learn how to build, deploy, and manage applications on the cloud with scalability and security in mind.</p>
+        <div class="service-number">09</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="bi bi-database"></i>
+      </div>
+      <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+      <div class="content">
+        <h4><a href="#">Big Data Analytics</a></h4>
+        <p>Work with massive datasets using Hadoop, Spark, and other big data tools. Learn to extract patterns, trends, and insights that power data-driven strategies in businesses.</p>
+        <div class="service-number">10</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
             </div>
           </div>
         </div>
@@ -346,337 +443,6 @@
       </div>
 
     </section><!-- /Featured Services Section -->
-
-    <!-- How We Work Section -->
-    <section id="how-we-work" class="how-we-work section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>How We Work</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="bi bi-search"></i>
-            </div>
-            <div class="step-number">Step 1</div>
-            <h3>Research &amp; Planning</h3>
-            <p>Nulla facilisi morbi tempus iaculis urna id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
-            <div class="step-arrow">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="bi bi-lightbulb"></i>
-            </div>
-            <div class="step-number">Step 2</div>
-            <h3>Creative Solutions</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            <div class="step-arrow">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="bi bi-gear"></i>
-            </div>
-            <div class="step-number">Step 3</div>
-            <h3>Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            <div class="step-arrow">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="bi bi-rocket-takeoff"></i>
-            </div>
-            <div class="step-number">Step 4</div>
-            <h3>Launch &amp; Support</h3>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /How We Work Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <ul class="nav nav-tabs flex-column" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#features-tab-1" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>Vestibulum ante ipsum</h4>
-                      <p>Proin iaculis purus consequat</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box">
-                      <i class="bi bi-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>Curabitur aliquet quam</h4>
-                      <p>Nulla quis lorem ut libero</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box">
-                      <i class="bi bi-house-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>Luna stride flared</h4>
-                      <p>Sed ut perspiciatis unde omnis</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box">
-                      <i class="bi bi-person-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>Quisque Velit Nisi</h4>
-                      <p>Duis aute irure dolor in</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box">
-                      <i class="bi bi-briefcase"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>Curabitur Aliquet</h4>
-                      <p>Excepteur sint occaecat cupidatat</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="tab-content">
-              <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>Nullam Lacinia Consectetur</h3>
-                      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
-                        neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
-                      <p class="highlight">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam
-                        sit amet quam vehicula elementum sed sit amet dui.</p>
-                      <ul class="features-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Curabitur aliquet quam id dui posuere blandit</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Nulla quis lorem ut libero malesuada feugiat</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vestibulum ac diam sit amet quam vehicula</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Donec rutrum congue leo eget malesuada</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc-square-6.webp" alt="" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>Sed Porttitor Lectus Nibh</h3>
-                      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus.
-                        Vestibulum ante ipsum primis in faucibus.</p>
-                      <p class="highlight">Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero
-                        malesuada feugiat.</p>
-                      <ul class="features-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vivamus suscipit tortor eget felis porttitor</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Curabitur aliquet quam id dui posuere</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Nulla quis lorem ut libero malesuada</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vestibulum ac diam sit amet quam</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc-square-13.webp" alt="" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>Praesent Sapien Massa</h3>
-                      <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in
-                        faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-                      <p class="highlight">Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula
-                        elementum sed sit amet dui.</p>
-                      <ul class="features-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Curabitur non nulla sit amet nisl</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vestibulum ac diam sit amet quam</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Donec rutrum congue leo eget</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Nulla quis lorem ut libero</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc-square-3.webp" alt="" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>Curabitur Aliquet Quam</h3>
-                      <p>Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                        amet dui. Curabitur aliquet quam id dui posuere blandit.</p>
-                      <p class="highlight">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur
-                        non nulla sit amet nisl tempus.</p>
-                      <ul class="features-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Nulla quis lorem ut libero malesuada</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Curabitur aliquet quam id dui</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vestibulum ac diam sit amet</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Donec rutrum congue leo</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc-square-5.webp" alt="" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-5" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>Vestibulum Ante Ipsum</h3>
-                      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut
-                        lacinia in, elementum id enim.</p>
-                      <p class="highlight">Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula
-                        elementum sed sit amet dui.</p>
-                      <ul class="features-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vivamus suscipit tortor eget felis</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Curabitur aliquet quam id dui</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Nulla quis lorem ut libero</span>
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i>
-                          <span>Vestibulum ac diam sit amet</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc-square-3.webp" alt="" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- /Features Section -->
 
     <!-- Quize Section -->
     <section id="quize" class="quize section light-background">
@@ -728,97 +494,131 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 col-md-6">
-            <div class="service-card featured">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Web Development</a></h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rutrum congue leo eget malesuada.</p>
-                <div class="service-meta">
-                  <span class="badge popular">Most Popular</span>
-                  <span class="price">Starting at $2,999</span>
-                </div>
-                <a href="service-details.html" class="btn-cta">
-                  <span>Get Started</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="service-bg"></div>
-            </div>
-          </div>
+<style>
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
 
-          <div class="col-lg-6 col-md-6">
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">UI/UX Design</a></h3>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</p>
-                <div class="service-meta">
-                  <span class="price">Starting at $1,899</span>
-                </div>
-                <a href="service-details.html" class="btn-cta">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="service-bg"></div>
-            </div>
-          </div>
+  @media (max-width: 992px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+  }
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card compact">
-              <div class="service-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Digital Marketing</a></h3>
-                <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-                <a href="service-details.html" class="btn-cta">
-                  <span>Explore</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="service-bg"></div>
-            </div>
-          </div>
+  @media (max-width: 576px) {
+    .service-grid {
+      grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+  }
+</style>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card compact">
-              <div class="service-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Security Solutions</a></h3>
-                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar vel. Sed porttitor lectus nibh vestibulum ac diam sit.</p>
-                <a href="service-details.html" class="btn-cta">
-                  <span>Discover</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="service-bg"></div>
-            </div>
-          </div>
+<div class="service-grid">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card compact">
-              <div class="service-icon">
-                <i class="bi bi-cloud-upload"></i>
-              </div>
-              <div class="service-content">
-                <h3><a href="service-details.html">Cloud Services</a></h3>
-                <p>Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
-                <a href="service-details.html" class="btn-cta">
-                  <span>Get Quote</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="service-bg"></div>
-            </div>
-          </div>
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-shield-lock"></i></div>
+    <div class="service-content">
+      <h3><a href="cybersecurity.html">Cybersecurity</a></h3>
+      <p>Protecting systems, networks, and data from cyber threats with advanced security measures.</p>
+      <a href="cybersecurity.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-link"></i></div>
+    <div class="service-content">
+      <h3><a href="blockchain_development.html">Blockchain</a></h3>
+      <p>Decentralized and secure solutions for financial, supply chain, and digital identity systems.</p>
+      <a href="blockchain_development.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+    <div class="service-content">
+      <h3><a href="web_development.html">Web Development</a></h3>
+      <p>Creating responsive, scalable, and high-performance websites and applications.</p>
+      <a href="web_development.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+    <div class="service-content">
+      <h3><a href="marketing.html">Digital Marketing</a></h3>
+      <p>Boosting online presence through SEO, social media, and targeted advertising campaigns.</p>
+      <a href="marketing.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-cpu"></i></div>
+    <div class="service-content">
+      <h3><a href="AI.html">Artificial Intelligence</a></h3>
+      <p>Innovative AI solutions to automate tasks, analyze data, and improve decision-making.</p>
+      <a href="AI.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-wifi"></i></div>
+    <div class="service-content">
+      <h3><a href="internetofthings.html">Internet of Things (IoT)</a></h3>
+      <p>Connecting devices and systems to enable smart, real-time monitoring and automation.</p>
+      <a href="internetofthings.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+  <div class="service-icon"><i class="bi bi-robot"></i></div>
+  <div class="service-content">
+    <h3><a href="machine_learning.html">Machine Learning</a></h3>
+    <p>Developing predictive models and algorithms that learn from data for smarter systems.</p>
+    <a href="machine_learning.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+  </div>
+  <div class="service-bg"></div>
+</div>
+
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
+    <div class="service-content">
+      <h3><a href="data_science.html">Data Science</a></h3>
+      <p>Extracting insights from structured and unstructured data to drive strategic actions.</p>
+      <a href="data_science.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-cloud-upload"></i></div>
+    <div class="service-content">
+      <h3><a href="cloud_computing.html">Cloud Computing</a></h3>
+      <p>Scalable and reliable cloud infrastructure to store, process, and secure your data.</p>
+      <a href="cloud_computing.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+  <div class="service-card compact">
+    <div class="service-icon"><i class="bi bi-database"></i></div>
+    <div class="service-content">
+      <h3><a href="big_data_analytics.html">Big Data Analytics</a></h3>
+      <p>Analyzing massive datasets to uncover trends, patterns, and actionable insights.</p>
+      <a href="big_data_analytics.html" class="btn-cta"><span>Explore</span><i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="service-bg"></div>
+  </div>
+
+</div>
+
 
         </div>
 
@@ -855,304 +655,6 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <!-- Basic Plan -->
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-item">
-              <div class="pricing-icon">
-                <i class="bi bi-star"></i>
-              </div>
-              <h3>Standard</h3>
-              <div class="price">
-                <span class="currency">$</span>9<span class="period">/month</span>
-              </div>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Vestibulum ante ipsum primis
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Fusce vulputate eleifend
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Nullam ac tortor vitae
-                </li>
-              </ul>
-              <a href="#" class="btn-pricing">Buy Now</a>
-            </div>
-          </div><!-- End Basic Plan -->
-
-          <!-- Professional Plan -->
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-item featured">
-              <div class="pricing-badge">Recommended</div>
-              <div class="pricing-icon">
-                <i class="bi bi-stars"></i>
-              </div>
-              <h3>Professional</h3>
-              <div class="price">
-                <span class="currency">$</span>29<span class="period">/month</span>
-              </div>
-              <p class="description">Maecenas tempus tellus eget condimentum rhoncus semper.</p>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Donec quam felis ultricies
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Aenean massa imperdiet
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Cras dapibus vivamus
-                </li>
-              </ul>
-              <a href="#" class="btn-pricing">Buy Now</a>
-            </div>
-          </div><!-- End Professional Plan -->
-
-          <!-- Ultimate Plan -->
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-item">
-              <div class="pricing-icon">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3>Ultimate</h3>
-              <div class="price">
-                <span class="currency">$</span>49<span class="period">/month</span>
-              </div>
-              <p class="description">Etiam rhoncus maecenas tempus tellus eget condimentum.</p>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Phasellus viverra nulla
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Quisque rutrum aenean
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  Etiam ultricies nisi vel
-                </li>
-              </ul>
-              <a href="#" class="btn-pricing">Buy Now</a>
-            </div>
-          </div><!-- End Ultimate Plan -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-
-            <div class="faq-wrapper">
-
-              <div class="faq-item faq-active">
-                <div class="faq-header">
-                  <div class="faq-icon">
-                    <i class="bi bi-question-circle"></i>
-                  </div>
-                  <h4>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar?</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon">
-                    <i class="bi bi-question-circle"></i>
-                  </div>
-                  <h4>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem?</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit.</p>
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon">
-                    <i class="bi bi-question-circle"></i>
-                  </div>
-                  <h4>Vestibulum ante ipsum primis in faucibus orci luctus?</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon">
-                    <i class="bi bi-question-circle"></i>
-                  </div>
-                  <h4>Nulla facilisi morbi tempus iaculis urna id volutpat?</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon">
-                    <i class="bi bi-question-circle"></i>
-                  </div>
-                  <h4>Praesent sapien massa, convallis a pellentesque nec?</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
-      <div class="container">
-
-        <div class="cta-wrapper">
-          <div class="cta-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-          </div>
-
-          <div class="row g-0">
-            <div class="col-lg-7">
-              <div class="cta-content p-5">
-                <span class="badge-custom">Premium Offer</span>
-                <h2 class="mt-4 mb-4">Transform Your Experience With Our Solution</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                <div class="row benefits-row mb-5">
-                  <div class="col-md-6">
-                    <div class="benefit-item">
-                      <div class="icon-box">
-                        <i class="bi bi-lightning-charge-fill"></i>
-                      </div>
-                      <div class="benefit-content">
-                        <h5>Quick Setup</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="benefit-item">
-                      <div class="icon-box">
-                        <i class="bi bi-shield-check"></i>
-                      </div>
-                      <div class="benefit-content">
-                        <h5>Full Security</h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="action-buttons">
-                  <a href="#" class="btn btn-primary">Start Now</a>
-                  <a href="#" class="btn btn-outline">Learn More</a>
-                  <div class="guarantee-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>30-Day Money Back</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5">
-              <div class="cta-image-container">
-                <img src="assets/img/illustration/illustration-3.webp" alt="Illustration" class="img-fluid main-image">
-                <div class="floating-element element-1">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4.9 Rating</span>
-                </div>
-                <div class="floating-element element-2">
-                  <i class="bi bi-people-fill"></i>
-                  <span>10k+ Users</span>
-                </div>
-                <div class="pattern-dots"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
@@ -1187,68 +689,57 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
+  <div class="testimonial-item">
+    <p>
+      <i class="bi bi-quote quote-icon-left"></i>
+      <span>The Web Development course at Avanteia Academy completely transformed my coding skills. The instructors explained everything step by step, and I was able to build my first real-world project within weeks. Highly recommended for beginners and aspiring developers!</span>
+      <i class="bi bi-quote quote-icon-right"></i>
+    </p>
+    <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
+    <h3>Rohit Sharma</h3>
+    <h4>Web Development Student</h4>
+  </div>
+</div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <p>
+      <i class="bi bi-quote quote-icon-left"></i>
+      <span>I joined the Blockchain course and it was a game-changer. The hands-on sessions on smart contracts and decentralized apps gave me practical exposure. Now I feel confident working on blockchain-based solutions.</span>
+      <i class="bi bi-quote quote-icon-right"></i>
+    </p>
+    <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
+    <h3>Anjali Verma</h3>
+    <h4>Blockchain Enthusiast</h4>
+  </div>
+</div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <p>
+      <i class="bi bi-quote quote-icon-left"></i>
+      <span>The Cybersecurity course gave me a strong foundation in ethical hacking and network security. The practical labs and real-world simulations were extremely valuable. I even cracked my first internship with these skills!</span>
+      <i class="bi bi-quote quote-icon-right"></i>
+    </p>
+    <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
+    <h3>Neha Kulkarni</h3>
+    <h4>Cybersecurity Student</h4>
+  </div>
+</div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <p>
+      <i class="bi bi-quote quote-icon-left"></i>
+      <span>Avanteia Academy’s Digital Marketing course was super practical. From SEO to social media campaigns, I learned how to create strategies that actually deliver results. I already helped a local business grow online using what I learned.</span>
+      <i class="bi bi-quote quote-icon-right"></i>
+    </p>
+    <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
+    <h3>Arjun Mehta</h3>
+    <h4>Digital Marketing Learner</h4>
+  </div>
+</div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
             </div><!-- End testimonial item -->
 
           </div>
@@ -1258,165 +749,6 @@
       </div>
 
     </section><!-- /Testimonials Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="team-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 800,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 1,
-              "spaceBetween": 30,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "breakpoints": {
-                "576": {
-                  "slidesPerView": 2
-                },
-                "992": {
-                  "slidesPerView": 3
-                },
-                "1200": {
-                  "slidesPerView": 4
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Marcus Wilson</h3>
-                  <span>Chief Technology Officer</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                </div>
-              </div><!-- End Team Card -->
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Sophia Reynolds</h3>
-                  <span>Product Designer</span>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-              </div><!-- End Team Card -->
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Daniel Chen</h3>
-                  <span>Marketing Specialist</span>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div><!-- End Team Card -->
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Olivia Thompson</h3>
-                  <span>Lead Developer</span>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                </div>
-              </div><!-- End Team Card -->
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Jason Parker</h3>
-                  <span>UI/UX Designer</span>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                </div>
-              </div><!-- End Team Card -->
-            </div><!-- End slide item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -1525,7 +857,11 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="img" class="img-fluid">
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. <br> Justo eget nada terra videa magna derita valies darta donna <br> mare fermentum iaculis eu non diam phasellus.</p>
+          <p>
+            Avanteia Academy is dedicated to providing world-class training in modern computer technologies.
+            From Web Development and Cybersecurity to AI, Data Science, Cloud Computing, and Blockchain,
+            we equip learners with practical skills and real-world projects to excel in the digital era.
+          </p>
           <div class="social-links d-flex mt-4">
             <a href="https://x.com/avanteia_" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61550634330052" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -1537,32 +873,24 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="https://www.google.com/maps?q=228+S+Jones+Blvd,+Las+Vegas">228 S Jones Blvd, Las Vegas, NV 89107, USA</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Our Branches</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="https://maps.app.goo.gl/y8KGX15uQcixko8m8">Pernem, Shop No. 322/C, Surbanwada Goa 403512.</a></li>
+            <li><a href="https://maps.app.goo.gl/WbkwLTuzx86HZXYc7">Mapusa, Shop No. 6, Shri Maharudra Saunsthan Sajjangad Sankul, Dattawadi Goa 403507.</a></li>
+            <li><a href="https://maps.app.goo.gl/v2gRggqUiSiTKFyU9">Margao, Mapari Audi Plaza, office No. 9, First Floor, Erasmo Carvalho Street. Margao 403601.</a></li>
+            <li><a href="https://www.google.com/maps/place/Channarayapatna,+Karnataka/@12.9028684,76.3615572,14z/data=!3m1!4b1!4m6!3m5!1s0x3ba5594accfa07f5:0xbe7e9f358e9188bc!8m2!3d12.9035322!4d76.3897978!16zL20vMGdnbWhj?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">Mysure, Kuvempu Nagara, Channarayapatna, Karnataka 573116.</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 93074 02403</span></p>
+          <p><strong>Email:</strong> <span>info@avanteia.com</span></p>
         </div>
 
       </div>

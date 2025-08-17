@@ -14,6 +14,15 @@
 
     <!-- Home Page -->
     <div id="home-page" class="page active">
+        <div class="back-button">
+            <button>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back To Page
+            </button>
+        </div>
+        
         <div class="container">
             <!-- Hero Section -->
             <div class="hero">
@@ -23,7 +32,13 @@
                         <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                     </svg>
                 </div>
-                <h1>TechQuiz Academy</h1>
+                <h1>Avantiea Academy</h1>
+                <div class="breadcrumb">
+                <span><a style="color: red;" href="">Home</a></span>
+                <span class="separator">/</span>
+                <span>Quiz</span>
+                </div>
+
                 <p>Master technology skills with our comprehensive quiz platform. Choose your course and test your knowledge across multiple levels.</p>
                 
                 <div class="features">
@@ -61,16 +76,16 @@
 
     <!-- Quiz Setup Page -->
     <div id="setup-page" class="page">
+        <div class="back-button">
+            <button onclick="showHomePage()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back To Page
+            </button>
+        </div>
+        
         <div class="container">
-            <div class="back-button">
-                <button onclick="showHomePage()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7"/>
-                    </svg>
-                    Back to Courses
-                </button>
-            </div>
-
             <div class="course-header" id="course-header">
                 <!-- Course info will be populated by JavaScript -->
             </div>

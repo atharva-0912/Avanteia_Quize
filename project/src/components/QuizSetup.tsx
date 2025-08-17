@@ -12,23 +12,23 @@ const levels = [
   {
     id: 'beginner',
     name: 'Beginner Level',
-    description: 'Basic concepts and fundamentals',
+    description: 'Basic concepts and fundamentals - Perfect for beginners',
     difficulty: 'Easy',
     color: 'bg-green-100 text-green-800',
     gradient: 'from-green-400 to-emerald-500'
   },
   {
     id: 'level-1',
-    name: 'Level 1',
-    description: 'Intermediate concepts and applications',
+    name: 'Intermediate Level',
+    description: 'Intermediate concepts and practical applications',
     difficulty: 'Medium',
     color: 'bg-yellow-100 text-yellow-800',
     gradient: 'from-yellow-400 to-orange-500'
   },
   {
     id: 'level-2',
-    name: 'Level 2',
-    description: 'Advanced topics and complex scenarios',
+    name: 'Advanced Level',
+    description: 'Advanced topics and complex real-world scenarios',
     difficulty: 'Hard',
     color: 'bg-red-100 text-red-800',
     gradient: 'from-red-400 to-pink-500'

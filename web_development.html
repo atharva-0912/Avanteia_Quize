@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Passion Bootstrap Template</title>
+  <title>Web Development</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -33,6 +33,65 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+ form {
+  margin-top: 15px;
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+  background: transparent;
+  
+  display: none; /* Hidden by default */
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-color: transparent;
+  background: var(--contrast-color);
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+ 
+}
+
+form button {
+  background: white;
+  color: maroon;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* form button:hover {
+  background: #b36200;
+} */
+ .bd-course-details-list-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+.bd-course-details-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bd-course-details-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.list-icon.success {
+    color: maroon;
+}
+#quoteForm { display: none; }
+#quoteForm { display: block; }
+
+</style>
 </head>
 
 <body class="service-details-page">
@@ -42,14 +101,14 @@
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@avanteia.com.com">info@avanteia.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+919307402403">+91 93074 02403</a></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://x.com/avanteia_" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550634330052" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/avanteia" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/avanteia-pvt-ltd/" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -58,14 +117,12 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Passion</h1>
-        </a>
+            <img src="assets/img/logo.png" alt="img" class="img-fluid">
+          </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -461,22 +518,22 @@
 
           <div class="col-lg-8">
             <div class="service-hero">
-              <img src="assets/img/services/services-7.webp" alt="" class="img-fluid">
-              <div class="service-badge">
+              <img src="assets/img/quizwebdevelopment_converted.webp" alt="" class="img-fluid">
+              <!-- <div class="service-badge">
                 <span>Premium Service</span>
-              </div>
+              </div> -->
             </div>
 
             <div class="service-content">
               <div class="service-header">
-                <h2>Digital Marketing Strategy &amp; Implementation</h2>
-                <p class="service-intro">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                <h2>Web Development</h2>
+                <p class="service-intro">Web development is the creation and maintenance of websites and web applications, involving both design and functionality. It covers front-end development, which focuses on visuals and interactivity, and back-end development, which manages data and server processes. By combining these areas, developers ensure sites are functional, responsive, and easy to use. This process enables the delivery of engaging and efficient online experiences for users.</p>
               </div>
 
               <div class="service-features">
-                <h4>What You'll Get</h4>
+                <h4>Topics Covered</h4>
                 <div class="row gy-3">
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <div class="feature-item">
                       <div class="feature-icon">
                         <i class="bi bi-graph-up-arrow"></i>
@@ -519,45 +576,135 @@
                         <p>Continuous refinement for maximum ROI</p>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+
+                  <div class="bd-course-details-content mb-30">
+    <!-- <h3 class="bd-course-details-content-title"></h3> -->
+    <div class="bd-course-details-list-box">
+        
+        <!-- List -->
+        <div class="bd-course-details-list">
+            <ul>
+              <h5 style="font-weight:600;">Web Development: Beginner</h5>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check" ></i></span> HTML (Hypertext Markup Language)
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> CSS (Cascading Style Sheets)
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> JavaScript
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> Web Hosting
+                </li>
+                <br>
+                <h5 style="font-weight:600;">Web Development: Level-01</h5>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check" ></i></span> HTML & CSS
+
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> JavaScript
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> PHP & SQL
+
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> React
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> GitHub
+                </li>
+                
+                <br>
+                <h5 style="font-weight:600;">Web Development: Level-02</h5>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check" ></i></span> HTML & CSS
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> JavaScript
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> PHP & SQL
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> React
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> GitHub
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> NextJS
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> NodeJS
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> Database Management System
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> Web Hosting
+                </li>
+                <li>
+                    <span class="list-icon success"><i class="fa-solid fa-check"></i></span> MongoDB
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
                 </div>
               </div>
 
               <div class="service-process">
-                <h4>Our Process</h4>
+                <h4>Overview</h4>
                 <div class="process-steps">
                   <div class="process-step">
-                    <div class="step-number">01</div>
+                    <div class="step-number" >
+                     <i class="fa-solid fa-chart-line" style="color: white;"></i></div>&nbsp;
                     <div class="step-content">
-                      <h5>Discovery &amp; Analysis</h5>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                      <h5>Web Development: Beginner</h5>
+                      <p>Create and style basic web pages and understand fundamental web development concepts.
+
+</p>
                     </div>
                   </div>
                   <div class="process-step">
-                    <div class="step-number">02</div>
+                    <div class="step-number" >
+                     <i class="fa-solid fa-chart-line" style="color: white;"></i></div>&nbsp;
                     <div class="step-content">
-                      <h5>Strategy Development</h5>
-                      <p>Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus.</p>
+                      <h5>Web Development: Level-01</h5>
+                      <p>Build dynamic web applications and integrate frontend and back-end technologies.</p>
                     </div>
                   </div>
                   <div class="process-step">
-                    <div class="step-number">03</div>
+                    <div class="step-number" >
+                     <i class="fa-solid fa-chart-line" style="color: white;"></i></div>&nbsp;
                     <div class="step-content">
-                      <h5>Implementation</h5>
-                      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit eget tincidunt nibh pulvinar.</p>
+                      <h5>Web Development: Level-02</h5>
+                      <p>Develop and manage comprehensive security solutions and conduct advanced security assessments. Develop and deploy complex web applications and optimize web performance.</p>
+                      <div>
+                        <table>
+                          <tr><i class="fas fa-briefcase" style="color: maroon; margin-right: 10px;"></i>Internship: Free internship opportunity included (Duration: 3 months)</tr>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                  <div class="process-step">
-                    <div class="step-number">04</div>
+    
+                  <!-- <div class="process-step">
+                    <div class="step-number" >
+                     <i class="fa-solid fa-chart-line" style="color: white;"></i></div>&nbsp;
                     <div class="step-content">
                       <h5>Monitoring &amp; Optimization</h5>
                       <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus donec sollicitudin molestie.</p>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
-              <div class="service-gallery">
+              <!-- <div class="service-gallery">
                 <h4>Project Showcase</h4>
                 <div class="row gy-3">
                   <div class="col-md-4">
@@ -570,7 +717,9 @@
                     <img src="assets/img/services/services-11.webp" alt="" class="img-fluid rounded">
                   </div>
                 </div>
-              </div>
+              </div> -->
+
+              
             </div>
           </div>
 
@@ -580,25 +729,45 @@
               <div class="service-menu">
                 <h4>Our Services</h4>
                 <div class="menu-list">
-                  <a href="#" class="menu-item active">
-                    <i class="bi bi-arrow-right"></i>
-                    <span>Digital Marketing</span>
-                  </a>
-                  <a href="#" class="menu-item">
+                  <a href="web_development.html" class="menu-item active">
                     <i class="bi bi-arrow-right"></i>
                     <span>Web Development</span>
                   </a>
-                  <a href="#" class="menu-item">
+                  <a href="cybersecurity.html" class="menu-item">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Brand Strategy</span>
+                    <span>Cybersecurity</span>
                   </a>
-                  <a href="#" class="menu-item">
+                  <a href="service-details.html" class="menu-item">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Content Creation</span>
+                    <span>Digital Marketing</span>
                   </a>
-                  <a href="#" class="menu-item">
+                  <a href="blockchain_development.html" class="menu-item">
                     <i class="bi bi-arrow-right"></i>
-                    <span>SEO Optimization</span>
+                    <span>Blockchain Development</span>
+                  </a>
+                  <a href="AI.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Artificial Intelligence</span>
+                  </a>
+                  <a href="internetofthings.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Internet of Things</span>
+                  </a>
+                  <a href="data_science.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Data Science</span>
+                  </a>
+                  <a href="machine_learning.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Machine Learning</span>
+                  </a>
+                  <a href="cloud_computing.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Cloud Computing</span>
+                  </a>
+                  <a href="big_data_analytics.html" class="menu-item">
+                    <i class="bi bi-arrow-right"></i>
+                    <span>Big Data Analytics</span>
                   </a>
                 </div>
               </div>
@@ -608,39 +777,50 @@
                 <div class="info-list">
                   <div class="info-item">
                     <span class="info-label">Duration:</span>
-                    <span class="info-value">3-6 months</span>
+                    <span class="info-value">1-3 months</span>
                   </div>
                   <div class="info-item">
-                    <span class="info-label">Team Size:</span>
-                    <span class="info-value">4-6 specialists</span>
+                    <span class="info-label">Internship:</span>
+                    <span class="info-value">3 months</span>
                   </div>
                   <div class="info-item">
-                    <span class="info-label">Delivery:</span>
-                    <span class="info-value">Bi-weekly reports</span>
+                    <span class="info-label">Certification:</span>
+                    <span class="info-value">Yes</span>
                   </div>
-                  <div class="info-item">
+                  <!-- <div class="info-item">
                     <span class="info-label">Support:</span>
                     <span class="info-value">24/7 monitoring</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
               <div class="contact-card">
                 <div class="contact-content">
                   <h4>Need Help?</h4>
-                  <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                  <p>We’re here to guide you every step of the way.</p>
                   <div class="contact-info">
                     <div class="contact-item">
                       <i class="bi bi-telephone"></i>
-                      <span>+1 (555) 123-4567</span>
+                      <span>+91 93074 02403</span>
                     </div>
                     <div class="contact-item">
                       <i class="bi bi-envelope"></i>
-                      <span>info@example.com</span>
+                      <span>info@avanteia.com</span>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-primary">Get Quote</a>
+                 <!-- <a href="#" id="getQuoteBtn" class="btn btn-primary">Submit</a> -->
+
+<!-- Form always visible -->
+<form id="quoteForm" action="https://formsubmit.co/info@avanteia.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="comment" placeholder="Your Comment" rows="4" required></textarea>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                  
                 </div>
+
               </div>
 
             </div>
@@ -660,60 +840,49 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Passion</span>
+            <img src="assets/img/logo.png" alt="img" class="img-fluid">
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>
+            Avanteia Academy is dedicated to providing world-class training in modern computer technologies.
+            From Web Development and Cybersecurity to AI, Data Science, Cloud Computing, and Blockchain,
+            we equip learners with practical skills and real-world projects to excel in the digital era.
+          </p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/avanteia_" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61550634330052" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/avanteia" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/avanteia-pvt-ltd/" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="https://www.google.com/maps?q=228+S+Jones+Blvd,+Las+Vegas">228 S Jones Blvd, Las Vegas, NV 89107, USA</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Our Branches</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="https://maps.app.goo.gl/y8KGX15uQcixko8m8">Pernem, Shop No. 322/C, Surbanwada Goa 403512.</a></li>
+            <li><a href="https://maps.app.goo.gl/WbkwLTuzx86HZXYc7">Mapusa, Shop No. 6, Shri Maharudra Saunsthan Sajjangad Sankul, Dattawadi Goa 403507.</a></li>
+            <li><a href="https://maps.app.goo.gl/v2gRggqUiSiTKFyU9">Margao, Mapari Audi Plaza, office No. 9, First Floor, Erasmo Carvalho Street. Margao 403601.</a></li>
+            <li><a href="https://www.google.com/maps/place/Channarayapatna,+Karnataka/@12.9028684,76.3615572,14z/data=!3m1!4b1!4m6!3m5!1s0x3ba5594accfa07f5:0xbe7e9f358e9188bc!8m2!3d12.9035322!4d76.3897978!16zL20vMGdnbWhj?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">Mysure, Kuvempu Nagara, Channarayapatna, Karnataka 573116.</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 93074 02403</span></p>
+          <p><strong>Email:</strong> <span>info@avanteia.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>© <span>Copyright</span><strong class="px-1 sitename">2025</strong><span>All Rights Reserved Designed by</span> <a href="https://avanteia.com/">Avanteia</a></p>
     </div>
 
   </footer>

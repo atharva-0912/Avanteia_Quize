@@ -99,6 +99,27 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #9ca3af;
+}
+
+.breadcrumb .separator {
+    margin: 0 8px;
+    color: #6b7280;
+}
+
+.sub-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e5e7eb;
     margin-bottom: 20px;
 }
 
@@ -496,6 +517,40 @@ body {
     .hero h1 {
         font-size: 2.8rem;
     }
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.back-button button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.back-button button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.back-button svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Setup Page Styles */
